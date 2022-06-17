@@ -1,0 +1,14 @@
+.return-link {
+    display: flex;
+    align-items: center;
+    width: 10px;
+    opacity: 0.8;
+    font-weight: bold;
+    &:hover {
+        opacity: 1;
+    }
+    &__image {
+        height: 15px;
+        padding-right: 5px;
+    }
+}

@@ -1,0 +1,21 @@
+.form {
+    max-width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    &__element {
+        display: flex;
+        flex-direction: column;
+        margin: 0 20px 15px 20px;
+        &__label {
+            margin: 0 0 5px 5px;
+        }
+        &__input {
+            padding: 3px 6px;
+        }
+    }
+}
+
+select {
+    min-width: 197px;
+}

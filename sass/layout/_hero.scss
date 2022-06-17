@@ -1,0 +1,18 @@
+.hero {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px 8px 0 0;
+    // BACKGROUND
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/ressources/img/hero_background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    & h1 {
+        font-size: 5rem;
+        font-weight: bold;
+        color: rgba(255, 255, 255, 0.8);
+    }
+}

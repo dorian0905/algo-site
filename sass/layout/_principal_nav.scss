@@ -1,0 +1,51 @@
+.seasons-navigation {
+    background-color: black;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0 10px 20px 10px rgba(black, 0.8);
+    &__list {
+        display: flex;
+        &__item {
+            width: 100%;
+            text-align: center;
+            border: 1px rgb(255, 255, 255) solid;
+            &__text {
+                display: inline-block;
+                font-size: 1.5em;
+                font-weight: bold;
+                cursor: pointer;
+                height: 100%;
+                width: 100%;
+                padding: 15px 0;
+                border-width: 4px;
+                border-style: solid;
+                border-top-color:rgb(143, 143, 143);
+                border-left-color:rgb(143, 143, 143);
+                border-bottom-color:rgb(78, 78, 78);
+                border-right-color:rgb(78, 78, 78);
+                opacity: 0.6;
+                &:hover {
+                    opacity: 1;
+                }
+                &--selected {
+                    background-color: $blue;
+                    border-top-color: $darkBlue;
+                    border-left-color: $darkBlue;
+                    border-bottom-color: $lightBlue;
+                    border-right-color: $lightBlue;
+                    cursor: default;
+                    opacity: 1;
+                    &:hover {  // Eviter les changement lors du hover d'un "bouton" selectionné
+                        border-top-color: $darkBlue;
+                        border-left-color: $darkBlue;
+                        border-bottom-color: $lightBlue;
+                        border-right-color: $lightBlue;
+                        background-color: $blue;
+                    }
+                }
+            }
+        }
+    }
+}
